@@ -14,3 +14,9 @@ ports:
   - name: xray-daemon
     port: 2000
     visibility: public
+  - port: 8008
+    onOpen: ignore
+  - port: 5432
+    onOpen: ignore
+
+image: marcopeg/gitpod-workspace-postgres:2.5.0
